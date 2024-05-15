@@ -17,29 +17,25 @@
                 <form action="" id="form1">    
 
                 <label for="formRequire" form="author_name">BOOK <i class="fa-solid fa-book-open" style="color: #ffffff; padding-left: 10px;"></i></label>
-                <input class="formFilling" type="text" id="name" name="author_name" required>
+                <input class="formFilling" type="text" id="book" name="author_name" required>
 
                 <label for="formRequire" form="author_name">AUTHOR <i class="fa-solid fa-user" style="color: #ffffff; padding-left: 10px;"></i></label>
-                <input class="formFilling" type="text" id="name" name="author_name" required>
+                <input class="formFilling" type="text" id="author" name="author_name" required>
 
                 <label for="formRequire" form="author_name">PAGES <i class="fa-solid fa-file" style="color: #ffffff; padding-left: 10px;"></i></label>
-                <input class="formFilling" type="number" id="name" name="author_name" required>
+                <input class="formFilling" type="number" id="pages" name="author_name" required>
 
                 <label for="formRequire" form="author_name">READ</label>
-                <input class="formFilling" type="checkbox" id="name" name="author_name">
+                <input class="formFilling" type="checkbox" id="read" name="author_name">
 
-                <button class="addBtn" type="submit" form="form1" value="Submit">ADD</button>
+                <button class="addBtn" type="button" onclick="storeInput()" form="form1" value="Submit">ADD</button>
             </form>
 
         </div>
             </div>
 
-            <div class="maincontainer">
-                <div class="card">
-                    <h2>The Lord Of The Rings</h2>
-                    <h2>J.R.R Tolkien</h2>
-                    <h2>1239</h2>
-                </div>
+            <div class="maincontainer" id="cardcontainer">
+               
             </div>
         </div>
 </body>
