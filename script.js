@@ -29,6 +29,18 @@ function storeInput() {
         card.appendChild(bookInfo); 
         card.appendChild(authorInfo);
         card.appendChild(pageInfo);
+
+
+        if(read.checked) {
+            let readInfo = document.createElement('p');
+                readInfo.innerHTML = "Read";
+                card.appendChild(readInfo);
+        } else {
+            let readInfo = document.createElement('p');
+            readInfo.innerHTML = "Not read";
+            card.appendChild(readInfo);
+        }
+        
         card.classList.add('card');
         document.getElementById("cardcontainer").appendChild(card);
     });
