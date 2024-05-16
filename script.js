@@ -7,26 +7,28 @@ function storeInput() {
     const read = document.getElementById("read");
 
 
-    const book1 = book.value;
-    const author1 = author.value;
-    const pages1 = pages.value;
-    const read1 = read.value;
+    function Book () {
+        book.value;
+        author.value;
+        pages.value;
+        read.value;
+    }
 
+  
+    myLibrary.push(Book);
 
-    myLibrary.push(book1, author1, pages1, read1);
-
-    myLibrary.forEach((myLibrary) => {
+    myLibrary.forEach(() => {
         const card = document.createElement("div");
-        const bookInfo = document.createElement('h2');
-            bookInfo.textContent = `${book1}`
-        const authorInfo = document.createElement('h2');
-            authorInfo.textContent = `${author1}`
-        const pageInfo = document.createElement('h2');
-            pageInfo.textContent = `${pages1}`    
+        const bookInfo = document.createElement('p');
+            bookInfo.textContent = book.value;
+        const authorInfo = document.createElement('p');
+            authorInfo.textContent = author.value
+        const pageInfo = document.createElement('p');
+            pageInfo.textContent = pages.value;
 
         card.appendChild(bookInfo); 
         card.appendChild(authorInfo);
-        card.appendChild(pageInfo);   
+        card.appendChild(pageInfo);
         card.classList.add('card');
         document.getElementById("cardcontainer").appendChild(card);
     });
