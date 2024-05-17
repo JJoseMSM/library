@@ -5,10 +5,12 @@ const read = document.getElementById("read");
 const submit = document.getElementById("addBook");
 const form = document.getElementById("form1");
     
-    const myLibrary = [];
+    
 
     form.addEventListener("submit", function(e) {
         e.preventDefault();
+
+        const myLibrary = [];
 
         function Book () {
             book.value;
@@ -16,11 +18,11 @@ const form = document.getElementById("form1");
             pages.value;
             read.value;
         }
-    
+
         myLibrary.push(Book);
 
         myLibrary.forEach(() => {
-    
+            
             const card = document.createElement("div");
             const bookInfo = document.createElement('p');
                 bookInfo.textContent = book.value;
