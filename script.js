@@ -5,8 +5,6 @@ const read = document.getElementById("read");
 const submit = document.getElementById("addBook");
 const form = document.getElementById("form1");
     
-    
-
     form.addEventListener("submit", function(e) {
         e.preventDefault();
 
@@ -37,12 +35,28 @@ const form = document.getElementById("form1");
     
             if(read.checked) {
                 let readInfo = document.createElement('p');
-                    readInfo.innerHTML = "Read";
+                let checkBox = document.createElement('input'); 
+                checkBox.type = "checkbox";
+                checkBox.name = "name";
+                checkBox.value = "value";
+                checkBox.id = "id";
+                let label = document.createElement('label');
+                readInfo.innerHTML = "Read";
                     card.appendChild(readInfo);
+                    card.appendChild(checkBox);
+                    card.appendChild(label);
             } else {
                 let readInfo = document.createElement('p');
-                readInfo.innerHTML = "Not read";
+                let checkBox = document.createElement('input'); 
+                checkBox.type = "checkbox";
+                checkBox.name = "name";
+                checkBox.value = "value";
+                checkBox.id = "id";
+                let label = document.createElement('label');
+                readInfo.innerHTML = "Read";
                 card.appendChild(readInfo);
+                card.appendChild(checkBox);
+                card.appendChild(label);
             }
             
             card.classList.add('card');

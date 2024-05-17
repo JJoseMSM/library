@@ -38,6 +38,7 @@ label {
 }
 
 .formFilling {
+    width: 100%;
     margin-top: 20px;
     padding: 5px;
     margin-bottom: 20px;
